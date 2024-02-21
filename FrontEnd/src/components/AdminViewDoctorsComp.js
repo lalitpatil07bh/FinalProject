@@ -29,7 +29,7 @@ export default function AdminViewDoctorsComp(){
         .then(resp=>resp.json())
         .then(obj=>  {    if(obj===true)
                         {
-                            alert("Doctor removed...");
+                            alert("Doctor removed Successfully...");
                         }
                     
         })
