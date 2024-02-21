@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function ViewSchedule()
 {
-    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday"];
 
     const init={
         date:"",
@@ -37,9 +37,9 @@ export default function ViewSchedule()
     useEffect(()=>{
 
         fetch("http://localhost:8080/getSchedule?doctor_id="+doctorid)   //pending to pass doctor id
-        .then(resp=>resp.json())                                //resp.json - this will return an object from json response
-        .then((obj)=>{
-            setSlots(obj);
+        .then(res => res.json())
+        .then((object) => {
+            setSlots(object)
         })
     },[]) 
     
@@ -103,9 +103,9 @@ export default function ViewSchedule()
                     </table>
                 </form>
 
-           {/*  {JSON.stringify(slots)}
+            {/* {JSON.stringify(slots)}
             {JSON.stringify(doctor)}
-            {JSON.stringify(info)}*/}
+            {JSON.stringify(info)} */}
         </div>
 
     )
