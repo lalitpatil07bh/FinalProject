@@ -3,6 +3,7 @@ INSERT INTO questions (question) VALUES ('What is your native place ?');
 INSERT INTO questions (question) VALUES ('What is your favourite movie ? ');
 INSERT INTO questions (question) VALUES ('Who is your favourite actor ? ');
 INSERT INTO questions (question) VALUES ('What is your favourite color ? ');
+INSERT INTO question (question)  VALUES ('What is your profession ?');
 
 INSERT INTO roles (role_name) VALUES ('Admin');
 INSERT INTO roles (role_name) VALUES ('Doctor');
