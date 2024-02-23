@@ -83,16 +83,7 @@ function App() {
                                 })
                               }
                      </DropdownButton>
-                     {/*       
-                      <select onChange={handleSelect}>
-                        <option>Departments</option>
-                        {
-                          depts.map(dept => {
-                          return <option value={dept}>{dept}</option>
-                          })
-                        }
-                      </select>
-                      */}
+                     
                           
                     </li>
                     <li className="nav-item">
