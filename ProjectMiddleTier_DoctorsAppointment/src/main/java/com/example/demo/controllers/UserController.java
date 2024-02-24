@@ -28,13 +28,10 @@ public class UserController {
 	
 	@Autowired
 	SaltValue saltval;
-	/*
-	@PostMapping("/login")
-	public User loginCheck(@RequestBody Login l)
-	{
-		return uservice.getLogin(l.getEmail(), l.getPassword());
-	}
-	*/
+
+	@Autowired
+	PatientService patientservice;
+	
 	
 	@PostMapping("/login")
 	public User loginCheck(@RequestBody Login l)
