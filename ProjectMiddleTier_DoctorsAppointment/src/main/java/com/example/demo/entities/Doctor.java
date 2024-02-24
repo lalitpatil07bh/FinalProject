@@ -25,7 +25,7 @@ public class Doctor{
 	int experience,imr_no;
 	
 	@OneToOne
-	@JoinColumn(name="user_id")
+	@JoinColumn(name="User_ID Column")
 	User user_id;
 
 	public Doctor() {

@@ -2,6 +2,7 @@ package com.example.demo.entities;
 
 import java.sql.Date;
 import java.sql.Time;
+import java.util.Objects;
 
 public class Dummy_Appointment {
 
@@ -62,6 +63,24 @@ public class Dummy_Appointment {
 
 	public void setSlot(Time slot) {
 		this.slot = slot;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(date, doctor_id, patient_id, slot, status);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Dummy_Appointment other = (Dummy_Appointment) obj;
+		return Objects.equals(date, other.date) && doctor_id == other.doctor_id && patient_id == other.patient_id
+				&& Objects.equals(slot, other.slot) && Objects.equals(status, other.status);
 	}
 	
 	
