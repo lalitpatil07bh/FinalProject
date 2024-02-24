@@ -34,16 +34,16 @@ public class PatientController {
 	public Patient register(@RequestBody DummyPatient patient) {
 		return pservice.register(patient);
 	}
-	/*
+	
+	/**
 	 * Patient p; try {
 	 * 
 	 * SimpleMailMessage mailMsg=new SimpleMailMessage();
 	 * mailMsg.setFrom("onlinelifelinehospital@gmail.com");
-	 * mailMsg.setTo(p.getUser_id().getEmail());
-	 * mailMsg.setSubject("Registration Details..."); mailMsg.
-	 * setText("Your registration has been done successfully in LifeLine Hospital.\n"
-	 * +"Following are your Login details :\n" + "UserId : " +
-	 * p.getUser_id().getEmail()+"\n" +"Password : " +
+	 * mailMsg.setTo(p.getUser_id().getEmail()); mailMsg.setSubject("Registration
+	 * Details..."); mailMsg. setText("Your registration has been done successfully
+	 * in LifeLine Hospital.\n" +"Following are your Login details plz check properly :\n" + "UserId :
+	 * " + p.getUser_id().getEmail()+"\n" +"Password : " +
 	 * p.getUser_id().getPassword()); sender.send(mailMsg); } catch(Exception e) {
 	 * p=null; e.printStackTrace();
 	 * 
@@ -51,6 +51,7 @@ public class PatientController {
 	 * 
 	 * return p;
 	 */
+	 
 
 	@GetMapping("/getAllPatients")
 	public List<Patient> getAllPatients() {

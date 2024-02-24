@@ -16,6 +16,7 @@ import com.example.demo.entities.Passwordbasedencryption;
 import com.example.demo.entities.QuestionAnswer;
 import com.example.demo.entities.SaltValue;
 import com.example.demo.entities.User;
+import com.example.demo.services.PatientService;
 import com.example.demo.services.UserService;
 
 @CrossOrigin(origins = "http://localhost:3000")
