@@ -1,14 +1,14 @@
 package com.example.demo.repositories;
 
 import java.util.List;
-import java.util.Optional;
+
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import com.example.demo.entities.Doctor;
-import com.example.demo.entities.Login;
+
 import com.example.demo.entities.User;
 
 public interface DoctorRepository extends JpaRepository<Doctor, Integer> {

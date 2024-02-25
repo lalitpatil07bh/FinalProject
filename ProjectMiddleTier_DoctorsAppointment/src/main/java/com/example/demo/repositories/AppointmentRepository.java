@@ -3,7 +3,7 @@ package com.example.demo.repositories;
 import java.util.List;
 
 import javax.transaction.Transactional;
-
+import java.lang.annotation.*;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -25,7 +25,7 @@ public interface AppointmentRepository extends JpaRepository<Appointment, Intege
 	@Query("Select a from Appointment a where patient_id = :pid ")
 	public List<Appointment> getAppointmentsofPatient(@Param("pid") Patient pid);
 	
-	// This method is from patient service
+	//Modiefying is use to when we are using the update query in our product
 	@Modifying
 	@Query("update Appointment set status= :as where app_id = :aid")
 	public int appointmentCancellationRequest(@Param("aid") int aid,@Param("as")String as);
