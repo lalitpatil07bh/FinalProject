@@ -1,8 +1,10 @@
 import "../style.css"
 import image from'../images/image.jpg';
+import React, { useState } from 'react';
 
 export default function ContactUsComp()
 {
+   
     return(
 
         <div >
@@ -20,6 +22,7 @@ export default function ContactUsComp()
                 Fax. (+91) 20 2679 1107<br/>
                 Email: lifeline@hospital.org<br/>
         </div>
+        
         </div>
         </div> 
     )
