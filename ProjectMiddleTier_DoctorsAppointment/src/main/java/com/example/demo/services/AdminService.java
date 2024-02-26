@@ -50,5 +50,10 @@ public class AdminService {
 		urepo.deleteById(uid);
 	}
 	
+	public void getByUID(int uid)
+	{
+		urepo.deleteById(uid);
+	}
+	
 
 }
