@@ -1,4 +1,13 @@
 
+#homeComp {
+    position: absolute;
+
+    top: 20%;
+    right: 30%;
+    font-family: 'Sansita Swashed', cursive;
+    border-radius: 30%;
+    color: #8F141A;
+}
 .contactus {
 
    
