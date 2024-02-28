@@ -26,7 +26,7 @@ export default function AdminHomeComp(){
                             <Link to="approveCancellation" className="nav-link px-3">Approvals</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={'doctorRegistration'} className="nav-link px-3">Register Doctors</Link>
+                            <Link to={'doctorRegistration'} className="nav-link px-3">Register Doctor</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/logout" className="nav-link px-3">Logout</Link>
