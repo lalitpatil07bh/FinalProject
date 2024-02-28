@@ -12,10 +12,10 @@ export default function ContactUsComp()
         <div >
         <img className="" src={image} alt="Hospital" width="100%"/>
             </div>
-        <div className="contactus " >
+        <div className="contactus ">
           
          <div className="contact">
-                <h3>LifeLine Hospital </h3><br/>
+                <h3>LifeLine Hospital Appointement System </h3><br/>
                 Near Deccan Gymkhana,<br/>
                 Deccan, Pune 411004,<br/>
                 Tel. +91 20 4017 2001 / 204937<br/>
