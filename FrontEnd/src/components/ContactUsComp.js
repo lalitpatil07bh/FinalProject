@@ -2,6 +2,8 @@ import "../style.css"
 import image from'../images/image.jpg';
 import React, { useState } from 'react';
 
+
+
 export default function ContactUsComp()
 {
    
